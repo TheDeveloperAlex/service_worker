@@ -27,13 +27,13 @@ const productList = [
 
 const creeateeproductCard = ({ id, title, img, description }) => {
   return `<li id="${id}">
+  <img src="${img}" alt="${title} - img" />
     <h3>${title}</h3>
-    <img src="${img}" alt="${title} - img" />
     <p>${description}</p>
 </li>`;
 };
 
-const $productList = $("#prooductList");
+const $productList = $("#productList");
 const procudsListItems = productList.forEach((item) => {
   $productList.append(creeateeproductCard({ ...item }));
 });

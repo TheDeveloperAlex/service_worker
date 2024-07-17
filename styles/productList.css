@@ -1,0 +1,16 @@
+#productList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#productList > li {
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#productList > li > img {
+  width: 320px;
+  height: 180px;
+}
